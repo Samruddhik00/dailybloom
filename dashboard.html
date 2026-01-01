@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DailyBloom Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main class="dashboard">
+    <section id="habits" class="card">
+      <h2>🌿 Habit Tracker</h2>
+      <div id="habitList"></div>
+      <button id="addHabitBtn" class="btn small">+ Add Habit</button>
+    </section>
+
+    <section id="moods" class="card">
+      <h2>💖 Mood Tracker</h2>
+      <div class="mood-options">
+        <label><input type="checkbox" value="Productive"> Productive</label>
+        <label><input type="checkbox" value="Happy"> Happy</label>
+        <label><input type="checkbox" value="Intermediate"> Intermediate</label>
+        <label><input type="checkbox" value="Tired/Ill"> Tired / Ill</label>
+        <label><input type="checkbox" value="Don’t Feel Like Doing Anything"> Don’t Feel Like Doing Anything</label>
+      </div>
+    </section>
+
+    <section id="todo" class="card">
+      <h2>📅 Schedule & To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Add a new task..." />
+      <button id="addTodoBtn" class="btn small">Add</button>
+      <ul id="todoList"></ul>
+    </section>
+
+    <section id="analysis" class="card">
+      <h2>📈 Monthly Analysis</h2>
+      <div id="progressBars"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
